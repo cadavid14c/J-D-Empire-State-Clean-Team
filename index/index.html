@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Garden State Clean Team</title>
+
+<!-- Fuente e iconos -->
+<link rel="icon" type="image/png" href="/img/icono.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<!-- Estilos -->
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="top-bar">
+      <div><i class="fa-solid fa-location-dot"></i> Medellín </div>
+      <div><i class="fa-regular fa-clock"></i> Open 24/7</div>
+      <div><i class="fa-solid fa-phone"></i> 00000000000 </div>
+      <button class="btn"><i class="fa-regular fa-bell"></i> SOLICITAR PRESUPUESTO</button>
+    </div>
+
+    <!-- Barra principal -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../img/logo.jpg" alt="Logo" />
+      </div>
+
+      <div class="menu">
+        <a href="index.html">HOGAR</a>
+        <a href="sobre_nosotros.html">SOBRE NOSOTROS</a>
+        <a href="servicios.html">SERVICIOS</a>
+        <a href="preguntas_frecuentes.html">PREGUNTAS FRECUENTES</a>
+        <a href="contacto.html">CONTÁCTANOS</a>
+      </div>
+
+<div class="menu-toggle" id="menuToggle">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+
+    </nav>
+
+    <!-- Carrusel -->
+    <div class="carousel">
+      <div class="slide active" style="background-image: url('../img/car1.jpg');"></div>
+      <div class="slide" style="background-image: url('../img/car2.jpg');"></div>
+      <div class="slide" style="background-image: url('../img/car3.jpg');"></div>
+
+      <div class="overlay"></div>
+
+      <div class="content">
+        <h1>SO FRESH & SO CLEAN...<br>WE PROMISE!</h1>
+        <button class="btn">Call Us Now 856-215-7007</button>
+      </div>
+
+      <div class="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <section class="services">
+      <h2 class="section-title">Our Cleaning Services</h2>
+      <p class="section-subtitle">We make your spaces shine — fast, fresh and spotless!</p>
+
+      <div class="cards-container">
+        <div class="card">
+          <img src="../img/card1.png" alt="Home Cleaning">
+          <h3>Home Cleaning</h3>
+          <p>Professional and detailed cleaning for your house, leaving it spotless and fresh.</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/card2.png" alt="Office Cleaning">
+          <h3>Office Cleaning</h3>
+          <p>Reliable cleaning services to keep your workspace clean and inspiring.</p>
+        </div>
+
+        <div class="card">
+          <img src="../img/card3.png" alt="Deep Cleaning">
+          <h3>Deep Cleaning</h3>
+          <p>Comprehensive deep cleaning to reach every corner and renew your environment.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="tabs">
+        <button class="tab active" data-tab="about">About</button>
+        <button class="tab" data-tab="how">How it Works</button>
+        <button class="tab" data-tab="why">Why Us</button>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="tab-content active" id="about">
+        <div class="content-text">
+          <h2>About Garden State Clean Team</h2>
+          <p>
+            Cleaning can be a chore and we know you have many choices when you consider hiring a maid service.
+            Because of that, we are constantly striving to improve our already high standards to have you see us
+            as the absolute best in the industry. It’s not enough to have trust in the cleaning crew that you let
+            into your home—you also have to trust that they will perform a first-class cleaning job for you.
+          </p>
+          <h3>We Provide</h3>
+          <ul class="features">
+            <li>✔ One-off, weekly or fortnightly visits</li>
+            <li>✔ Vetted & background-checked cleaners</li>
+            <li>✔ Online Free Estimate</li>
+            <li>✔ Keep the same cleaner for every visit</li>
+            <li>✔ All cleaning materials and equipment</li>
+            <li>✔ 100% satisfaction guarantee</li>
+          </ul>
+        </div>
+        <div class="content-image">
+          <img src="../img/valde.png" alt="Cleaner with supplies">
+        </div>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <div class="tab-content" id="how">
+        <div class="content-text">
+          <h2>How Garden State Clean Team Works</h2>
+          <p>
+            When the weekend finally arrives, you’d much rather put your feet up while a cleaning service does the work,
+            rather than spend your precious downtime on your hands and knees scrubbing.
+          </p>
+          <p>
+            Taking the stress out of any aspect of cleaning is what we specialise in.
+            We will come to your premises and offer a free quote, so you know exactly what you’ll be spending.
+          </p>
+          <h3>Get a Free Estimate</h3>
+          <p>
+            Fill out our Cleaning Estimate form and one of our representatives will contact you ASAP.
+          </p>
+          <h3>Get a 5 Star Cleaner</h3>
+          <p>
+            Every cleaner is friendly and reliable. They’ve been background-checked & rated 5-stars.
+          </p>
+        </div>
+        <div class="content-image">
+          <img src="../img/valde.png" alt="Cleaning process">
+        </div>
+      </div>
+
+      <!-- WHY US -->
+      <div class="tab-content" id="why">
+        <div class="content-text">
+          <h2>Why Choose Garden State Clean Team</h2>
+
+          <div class="why-item">
+            <h4>1. We Treat Your Homes Like Ours</h4>
+            <p>
+              At Garden State Clean Team, we are fully bonded and insured, meaning you can have peace of mind
+              when we enter your home.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h4>2. Satisfaction Guaranteed</h4>
+            <p>
+              Our cleaning crew are professionally trained, and if you’re ever unhappy with any area we’ve cleaned,
+              we’ll return and reclean it the next day.
+            </p>
+          </div>
+
+          <div class="why-item">
+            <h4>3. We Are Experts</h4>
+            <p>
+              We dominate the industry in scale and scope with an adaptable, extensive network
+              that consistently delivers exceptional results.
+            </p>
+          </div>
+        </div>
+        <div class="content-image">
+          <img src="../img/valde.png" alt="Happy client after cleaning">
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons-section">
+  <div class="reasons-container">
+    <div class="reasons-images">
+      <img src="../img/reason1.jpg" alt="Cleaning carpet" class="reason-img">
+      <img src="../img/reason2.jpg" alt="Modern living room" class="reason-img">
+      <img src="../img/reason3.jpg" alt="Clean kitchen" class="reason-img">
+    </div>
+
+    <div class="reasons-content">
+      <h2>Reasons to <span>Choose Us</span></h2>
+      <p>
+        Behind our commitment to excellence are few key attributes that define who we are and what makes us different from any other.
+      </p>
+
+      <div class="reason-item">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+          <h3>Top-Rated Company</h3>
+          <p>We hold a successful track record of satisfying our customers and getting back their bond money.</p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+          <h3>Superior Quality</h3>
+          <p>We use the most excellent quality tools and equipment to get all the dust and dirt out of your premises.</p>
+        </div>
+      </div>
+
+      <div class="reason-item">
+        <i class="fa-solid fa-leaf"></i>
+        <div>
+          <h3>Eco-Friendly Products</h3>
+          <p>We use biodegradable products which do not harm the environment, pets or humans in any way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <div class="testimonial-overlay">
+    <h2>Happy Customers, Happy Homes</h2>
+    <p class="testimonial-text">
+      They are very professional and do a great job cleaning the house!! I locked myself out of my house the other day and they were the only ones with a key. They were kind enough to drive over to unlock the door. That speaks volumes!!! They really care about their clients.
+    </p>
+    <p class="testimonial-author">— <span>Jesse Hudson</span>, Brick</p>
+  </div>
+
+  <div class="stats-section">
+    <div class="stat-item">
+      <i class="fa-solid fa-star"></i>
+      <h3>150+</h3>
+      <p>Happy Customers</p>
+    </div>
+    <div class="stat-item">
+      <i class="fa-solid fa-badge-check"></i>
+      <h3>100%</h3>
+      <p>Service Guarantee</p>
+    </div>
+    <div class="stat-item">
+      <i class="fa-solid fa-broom"></i>
+      <h3>10+</h3>
+      <p>Cleaners</p>
+    </div>
+    <div class="stat-item">
+      <i class="fa-solid fa-house-chimney"></i>
+      <h3>1000</h3>
+      <p>Cleans Completed</p>
+    </div>
+  </div>
+</section>
+
+<section class="estimate">
+    <div class="estimate-text">
+      <h2>We Offer <span>Free In-Home</span> Estimates, So Why Wait?</h2>
+      <h3>Ready for a cleaner facility</h3>
+      <p>
+        When it comes to gauging a complete and effective cleaning and sanitation
+        solution, from a cost perspective, it is important to ensure the accuracy
+        of all costs involved.
+      </p>
+      <p>
+        This cost calculator is provided to clients to assist you in establishing
+        the estimated cleaning cost for your company.
+      </p>
+      <a href="#" class="btn-estimate">
+        <i>📋</i> Get A Free Estimate
+      </a>
+    </div>
+
+    <div class="estimate-images">
+      <img src="/img/we1.jpg" alt="Family 1">
+      <img src="/img/we2.jpg" alt="Cleaning 2">
+      <img src="/img/we3.jpg" alt="Family 3">
+      <img src="/img/we4.jpg" alt="Family 4">
+    </div>
+  </section>
+
+  <section class="reason">
+  <div class="reason-image">
+    <img src="/img/natural.jpg" alt="Natural Cleaning">
+  </div>
+
+  <div class="reason-text">
+    <h2>Natural Cleaning Products</h2>
+    <p>We feel good about cleaning with our self-formulated, natural products that are better for the environment.</p>
+
+    <h3>100% Safe & Organic</h3>
+    <p>We combine high concentrates of pure organic essential oils with quality plant-derived ingredients.</p>
+
+    <h3>We Care About The Earth</h3>
+    <p>All of our packaging, bottles, cleaning equipment, even our uniforms come from recycled, fairtrade or low impact origins.</p>
+  </div>
+</section>
+
+
+
+
+
+
+
+    <!-- Script -->
+    <script src="../script.js"></script>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Columna 1 -->
+        <div class="footer-col">
+          <img src="../img/logo.jpg" alt="J&D Empire State Clean Team Logo" class="footer-logo">
+          <p>We use natural and eco-friendly cleaning products and have a customer satisfaction guarantee.</p>
+          <p><strong>We are Fully Licensed and Insured</strong></p>
+        </div>
+
+        <!-- Columna 2 -->
+        <div class="footer-col">
+          <h3>Cleaning Services</h3>
+          <ul>
+            <li>✔ Apartment Cleaning</li>
+            <li>✔ Residential Cleaning</li>
+            <li>✔ House Cleaning</li>
+            <li>✔ Commercial Cleaning</li>
+            <li>✔ Move In / Move Out</li>
+            <li>✔ Window Cleaning</li>
+            <li>✔ After Renovation</li>
+          </ul>
+        </div>
+
+        <!-- Columna 3 -->
+        <div class="footer-col">
+          <h3>Contact Information</h3>
+          <ul class="contact-info">
+            <li>📍 Empire State, New York</li>
+            <li>📞 +1 555-123-4567</li>
+            <li>✉ contact@jdcleanteam.com</li>
+            <li>🕒 Mon-Sun: 24/7</li>
+          </ul>
+          <button class="footer-btn">Get A Free Estimate</button>
+        </div>
+      </div>
+
+      <!-- Línea inferior -->
+      <div class="footer-bottom">
+        <p>© 2025 J&D Empire State Clean Team</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
