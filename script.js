@@ -10,7 +10,7 @@ function changeSlide() {
     slide.classList.remove('active');
     dots[i].classList.remove('active');
   });
-  
+
   index = (index + 1) % slides.length;
   slides[index].classList.add('active');
   dots[index].classList.add('active');
@@ -20,7 +20,7 @@ function changeSlide() {
 if (slides.length > 0 && dots.length > 0) {
   setInterval(changeSlide, 4000);
 
-  // Permitir cambiar manualmente con los puntos
+  // Cambiar manualmente con los puntos
   dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
       slides.forEach((s, j) => {
@@ -33,11 +33,6 @@ if (slides.length > 0 && dots.length > 0) {
     });
   });
 }
-
-
-
-
-
 
 // =======================
 // Tabs (About / How it Works / Why Us)
@@ -57,20 +52,27 @@ if (tabs.length > 0 && contents.length > 0) {
   });
 }
 
-
+// =======================
+// FAQ (Preguntas frecuentes)
+// =======================
 const questions = document.querySelectorAll('.faq-question');
-
-  questions.forEach((btn) => {
+if (questions.length > 0) {
+  questions.forEach(btn => {
     btn.addEventListener('click', () => {
       btn.parentElement.classList.toggle('active');
     });
   });
+}
 
+// =======================
+// Menú Responsive
+// =======================
+const menuToggle = document.getElementById("menu-toggle"); // ✅ corregido el ID
+const menu = document.getElementById("menu");
 
-  const menuToggle = document.getElementById("menuToggle");
-  const menu = document.getElementById("menu");
-
+if (menuToggle && menu) {
   menuToggle.addEventListener("click", () => {
-    menu.classList.toggle("active");
-    menuToggle.classList.toggle("open");
+    menu.classList.toggle("active");      // Muestra/oculta el menú
+    menuToggle.classList.toggle("open");  // Animación hamburguesa a X
   });
+}
