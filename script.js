@@ -76,3 +76,29 @@ if (menuToggle && menu) {
     menuToggle.classList.toggle("open");  // Animación hamburguesa a X
   });
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contactForm");
+    const statusText = document.getElementById("formStatus");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        fetch(form.action, {
+            method: "POST",
+            body: new FormData(form)
+        })
+        .then(() => {
+            statusText.textContent = "Mensaje enviado correctamente.";
+            form.reset();
+        })
+        .catch(() => {
+            statusText.textContent = "Hubo un error al enviar.";
+        });
+    });
+
+});
+
+
+

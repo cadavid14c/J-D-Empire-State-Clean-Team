@@ -487,7 +487,7 @@ body {
 
 .testimonial-section {
   position: relative;
-  background-image: url("img/fondo.jpg"); /* <-- cambia la ruta a tu imagen */
+  background-image: url("img/fondo.jpg"); 
   background-size: cover;
   background-position: center;
   color: #333;
